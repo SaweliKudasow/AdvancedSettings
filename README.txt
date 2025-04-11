@@ -1,59 +1,50 @@
--------------------------------------------
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+# 🏃 AdvancedSettings Mod for Minecraft 1.8.9
 
-Note also that the patches are built against "unrenamed" MCP source code (aka
-srgnames) - this means that you will not be able to read them directly against
-normal code.
+A simple and lightweight Minecraft mod that automatically holds the sprint key for you — with a customizable GUI and colorful interface.
 
-Source pack installation information:
+---
 
-Standalone source installation
-==============================
+## ✨ Features
 
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
+- 🖥️ **Custom GUI**  
+  Open an in-game interface to toggle features and customize settings.
 
-Step 2: Once you have a command window up in the folder that the downloaded material was placed, type:
+- 🏃 **Auto Sprint**  
+  Automatically sprints without holding down the `Ctrl` key.
 
-Windows: "gradlew setupDecompWorkspace"
-Linux/Mac OS: "./gradlew setupDecompWorkspace"
+- ❌ **Close Button**  
+  Easily close the GUI with a built-in button.
 
-Step 3: After all that finished, you're left with a choice.
-For eclipse, run "gradlew eclipse" (./gradlew eclipse if you are on Mac/Linux)
+- 🎨 **Text Colors**  
+  Color-coded elements for better readability.
 
-If you preffer to use IntelliJ, steps are a little different.
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Once it's finished you must close IntelliJ and run the following command:
+---
 
-"gradlew genIntellijRuns" (./gradlew genIntellijRuns if you are on Mac/Linux)
+## 🎮 How to Use
 
-Step 4: The final step is to open Eclipse and switch your workspace to /eclipse/ (if you use IDEA, it should automatically start on your project)
+- Press **`G`** to open the mod’s GUI.  
+  _(You can change this key in the Minecraft **Controls** menu.)_
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can run "gradlew --refresh-dependencies" to refresh the local cache. "gradlew clean" to reset everything {this does not effect your code} and then start the processs again.
+- Toggle the **Auto Sprint** option from the GUI.
 
-Should it still not work, 
-Refer to #ForgeGradle on EsperNet for more information about the gradle environment.
+- Use the **Close** button to exit the GUI at any time.
 
-Tip:
-If you do not care about seeing Minecraft's source code you can replace "setupDecompWorkspace" with one of the following:
-"setupDevWorkspace": Will patch, deobfusicated, and gather required assets to run minecraft, but will not generated human readable source code.
-"setupCIWorkspace": Same as Dev but will not download any assets. This is useful in build servers as it is the fastest because it does the least work.
+---
 
-Tip:
-When using Decomp workspace, the Minecraft source code is NOT added to your workspace in a editable way. Minecraft is treated like a normal Library. Sources are there for documentation and research purposes and usually can be accessed under the 'referenced libraries' section of your IDE.
+## 📦 Installation
 
-Forge source installation
-=========================
-MinecraftForge ships with this code and installs it as part of the forge
-installation process, no further action is required on your part.
+> 🛠️ This mod requires **Minecraft Forge 1.8.9**
 
-LexManos' Install Video
-=======================
-https://www.youtube.com/watch?v=8VEdtQLuLO0&feature=youtu.be
+1. Download and install [Minecraft Forge 1.8.9](https://files.minecraftforge.net/).
+2. Place the mod `.jar` file into your `mods` folder.
+   - On Windows: `C:\Users\<YourName>\AppData\Roaming\.minecraft\mods`
+   - On macOS: `~/Library/Application Support/minecraft/mods`
+3. Launch the game with the Forge profile.
 
-For more details update more often refer to the Forge Forums:
-http://www.minecraftforge.net/forum/index.php/topic,14048.0.html
+---
+
+## 💬 Credits
+
+Created with ❤️ by Kudasow Saweli
+Special thanks to the Minecraft Modding Community!
+
