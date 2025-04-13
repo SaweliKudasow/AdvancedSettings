@@ -45,6 +45,6 @@ A simple and lightweight Minecraft mod that automatically holds the sprint key f
 
 ## 💬 Credits
 
-Created with ❤️ by Kudasow Saweli
+Created with ❤️ by Kudasow Saweli  
 Special thanks to the Minecraft Modding Community!
 

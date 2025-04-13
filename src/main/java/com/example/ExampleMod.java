@@ -8,6 +8,7 @@ import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
@@ -20,6 +21,12 @@ public class ExampleMod {
     public static final String NAME = "Example Mod";
 
     private KeyBinding openGuiKey;
+
+    @EventHandler
+    public void preInit(FMLPreInitializationEvent event) {
+        // Initialize configuration
+        ModConfig.init(event.getSuggestedConfigurationFile());
+    }
 
     @EventHandler
     public void init(FMLInitializationEvent event) {

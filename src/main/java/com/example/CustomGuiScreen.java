@@ -49,6 +49,8 @@ public class CustomGuiScreen extends GuiScreen {
         } else if (button.id == SPRINT_BUTTON_ID) {
             autoSprintEnabled = !autoSprintEnabled;
             sprintButton.displayString = "Auto Sprint: " + (autoSprintEnabled ? COLOR_GREEN + "On" : COLOR_RED + "Off");
+            // Save settings when changed
+            ModConfig.saveConfig();
         }
     }
 
